@@ -2,6 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
+
+function clickEvent(event) {
+    event.preventDefault();
+    console.log("test");
+}
+
+ReactDOM.render(import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+
 class Calc extends React.Component {
     constructor(props) {
         super(props);
@@ -37,5 +47,8 @@ class Calc extends React.Component {
 
 ReactDOM.render(
     <Calc/>,
+    document.getElementById('root')
+);
+    <a href="#" onClick={clickEvent}>Click Me!</a>,
     document.getElementById('root')
 );
